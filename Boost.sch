@@ -1,0 +1,227 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:CustomICs
+LIBS:CustomModules
+LIBS:CustomPower
+LIBS:CustomPowerConvertors
+LIBS:CustomTransistors
+LIBS:Custom_ShiftRegisters
+LIBS:STM32_MCU
+LIBS:dc-dc-converters
+LIBS:Relais
+LIBS:CustomDevices
+LIBS:SensorActuator-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +BATT #PWR?
+U 1 1 566416E7
+P 4150 3150
+F 0 "#PWR?" H 4150 3000 50  0001 C CNN
+F 1 "+BATT" H 4150 3290 50  0000 C CNN
+F 2 "" H 4150 3150 60  0000 C CNN
+F 3 "" H 4150 3150 60  0000 C CNN
+	1    4150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L PMosfetGen Q?
+U 1 1 566416ED
+P 4650 3150
+F 0 "Q?" H 4875 3225 60  0000 C CNN
+F 1 "PMosfetGen" H 5050 3125 60  0000 C CNN
+F 2 "SMD_Packages:SOT-323" H 4200 3290 60  0001 C CNN
+F 3 "" H 4200 3290 60  0000 C CNN
+	1    4650 3150
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 566416F4
+P 4300 3450
+F 0 "R?" V 4380 3450 50  0000 C CNN
+F 1 "47k" V 4300 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4230 3450 30  0001 C CNN
+F 3 "" H 4300 3450 30  0000 C CNN
+	1    4300 3450
+	0    1    1    0   
+$EndComp
+Text GLabel 4550 3650 3    60   Input ~ 0
+Enable5V
+$Comp
+L TPS61222 U?
+U 1 1 566416FC
+P 6250 2900
+F 0 "U?" H 6250 2900 60  0000 C CNN
+F 1 "TPS61222" H 6250 2350 60  0000 C CNN
+F 2 "" H 6250 2900 60  0001 C CNN
+F 3 "" H 6250 2900 60  0000 C CNN
+	1    6250 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56641703
+P 5800 3350
+F 0 "#PWR?" H 5800 3100 50  0001 C CNN
+F 1 "GND" H 5800 3200 50  0000 C CNN
+F 2 "" H 5800 3350 60  0000 C CNN
+F 3 "" H 5800 3350 60  0000 C CNN
+	1    5800 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 56641709
+P 5150 3300
+F 0 "C?" H 5175 3400 50  0000 L CNN
+F 1 "10uF" H 5175 3200 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 5188 3150 30  0001 C CNN
+F 3 "" H 5150 3300 60  0000 C CNN
+	1    5150 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56641710
+P 5150 3450
+F 0 "#PWR?" H 5150 3200 50  0001 C CNN
+F 1 "GND" H 5150 3300 50  0000 C CNN
+F 2 "" H 5150 3450 60  0000 C CNN
+F 3 "" H 5150 3450 60  0000 C CNN
+	1    5150 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR 4.7uH?
+U 1 1 56641716
+P 5500 3050
+F 0 "4.7uH?" V 5450 3050 50  0000 C CNN
+F 1 "INDUCTOR" V 5600 3050 50  0000 C CNN
+F 2 "CustomInductors:EPL3015" H 5500 3050 60  0001 C CNN
+F 3 "" H 5500 3050 60  0000 C CNN
+	1    5500 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 3450 4150 3150
+Wire Wire Line
+	4150 3150 4300 3150
+Wire Wire Line
+	4450 3450 4550 3450
+Wire Wire Line
+	4550 3450 4550 3650
+Wire Wire Line
+	5050 3150 5800 3150
+Wire Wire Line
+	5800 3250 5650 3250
+Connection ~ 5150 3150
+Wire Wire Line
+	5650 3250 5650 3150
+Connection ~ 5650 3150
+Wire Wire Line
+	5200 3050 5150 3050
+Wire Wire Line
+	5150 3050 5150 3150
+Wire Wire Line
+	6700 3150 6700 3050
+Wire Wire Line
+	6700 3050 7450 3050
+$Comp
+L C C?
+U 1 1 5664172A
+P 7050 3200
+F 0 "C?" H 7075 3300 50  0000 L CNN
+F 1 "10uF" H 7075 3100 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 7088 3050 30  0001 C CNN
+F 3 "" H 7050 3200 60  0000 C CNN
+	1    7050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56641731
+P 7050 3350
+F 0 "#PWR?" H 7050 3100 50  0001 C CNN
+F 1 "GND" H 7050 3200 50  0000 C CNN
+F 2 "" H 7050 3350 60  0000 C CNN
+F 3 "" H 7050 3350 60  0000 C CNN
+	1    7050 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 7050 3050
+$Comp
+L +5V #PWR?
+U 1 1 56641738
+P 7450 3050
+F 0 "#PWR?" H 7450 2900 50  0001 C CNN
+F 1 "+5V" H 7450 3190 50  0000 C CNN
+F 2 "" H 7450 3050 60  0000 C CNN
+F 3 "" H 7450 3050 60  0000 C CNN
+	1    7450 3050
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	3900 2450 7600 2450
+Wire Notes Line
+	7600 2450 7600 4250
+Wire Notes Line
+	7600 4250 3900 4250
+Wire Notes Line
+	3900 4250 3900 2450
+Text Notes 3900 2450 0    60   ~ 0
+5V Supply
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56641743
+P 5050 3000
+F 0 "#FLG?" H 5050 3095 50  0001 C CNN
+F 1 "PWR_FLAG" H 5050 3180 50  0000 C CNN
+F 2 "" H 5050 3000 60  0000 C CNN
+F 3 "" H 5050 3000 60  0000 C CNN
+	1    5050 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3000 5050 3150
+$EndSCHEMATC

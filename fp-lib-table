@@ -1,0 +1,9 @@
+(fp_lib_table
+  (lib (name STM32)(type KiCad)(uri /media/Data/pluyckx/Dropbox/Elektronics/kicad/modules/STM32.pretty)(options "")(descr ""))
+  (lib (name Connectors)(type KiCad)(uri /media/Data/pluyckx/Dropbox/Elektronics/kicad/modules/Connectors.pretty)(options "")(descr ""))
+  (lib (name CustomInductors)(type KiCad)(uri /media/Data/pluyckx/Dropbox/Elektronics/kicad/modules/CustomInductors.pretty)(options "")(descr ""))
+  (lib (name CustomSmd)(type KiCad)(uri /media/Data/pluyckx/Dropbox/Elektronics/kicad/modules/CustomSmd.pretty)(options "")(descr ""))
+  (lib (name DC_DC_Converters)(type KiCad)(uri /media/Data/pluyckx/Dropbox/Elektronics/kicad/modules/DC_DC_Converters.pretty)(options "")(descr ""))
+  (lib (name Inductors_DRA)(type KiCad)(uri /media/Data/pluyckx/Dropbox/Elektronics/kicad/modules/Inductors_DRA.pretty)(options "")(descr ""))
+  (lib (name CustomModules)(type KiCad)(uri /media/Data/pluyckx/Dropbox/Elektronics/kicad/modules/CustomModules.pretty)(options "")(descr ""))
+)

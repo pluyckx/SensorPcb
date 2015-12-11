@@ -1,0 +1,185 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:CustomICs
+LIBS:CustomModules
+LIBS:CustomPower
+LIBS:CustomPowerConvertors
+LIBS:CustomTransistors
+LIBS:Custom_ShiftRegisters
+LIBS:STM32_MCU
+LIBS:dc-dc-converters
+LIBS:Relais
+LIBS:SensorActuator-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +5V #PWR?
+U 1 1 56622EB6
+P 2950 1950
+F 0 "#PWR?" H 2950 1800 50  0001 C CNN
+F 1 "+5V" H 2950 2090 50  0000 C CNN
+F 2 "" H 2950 1950 60  0000 C CNN
+F 3 "" H 2950 1950 60  0000 C CNN
+	1    2950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56622ECA
+P 2500 3650
+F 0 "#PWR?" H 2500 3400 50  0001 C CNN
+F 1 "GND" H 2500 3500 50  0000 C CNN
+F 2 "" H 2500 3650 60  0000 C CNN
+F 3 "" H 2500 3650 60  0000 C CNN
+	1    2500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L PIR U?
+U 1 1 56623061
+P 2800 3350
+F 0 "U?" H 2800 2900 60  0000 C CNN
+F 1 "PIR" H 2800 3350 60  0000 C CNN
+F 2 "" H 2800 3350 60  0000 C CNN
+F 3 "" H 2800 3350 60  0000 C CNN
+	1    2800 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L PMosfetGen Q?
+U 1 1 56623098
+P 2950 2200
+F 0 "Q?" H 3270 2250 60  0000 C CNN
+F 1 "PMosfetGen" H 3270 2150 60  0000 C CNN
+F 2 "" H 2900 2340 60  0000 C CNN
+F 3 "" H 2900 2340 60  0000 C CNN
+	1    2950 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 566230C3
+P 2700 2100
+F 0 "R?" V 2780 2100 50  0000 C CNN
+F 1 "R" V 2700 2100 50  0000 C CNN
+F 2 "" V 2630 2100 30  0000 C CNN
+F 3 "" H 2700 2100 30  0000 C CNN
+	1    2700 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1950 2950 1950
+Wire Wire Line
+	2950 1950 2950 2050
+Wire Wire Line
+	2550 2250 2800 2250
+Connection ~ 2700 2250
+Text GLabel 2500 3550 0    60   Output ~ 0
+ADC_Motion
+Text GLabel 2550 2250 0    60   Input ~ 0
+MotionSens_Enable
+Wire Wire Line
+	2950 2350 2950 2550
+Wire Wire Line
+	2950 2550 3050 2550
+Text GLabel 2500 3450 0    60   Input ~ 0
+MotionSensor_V+
+Text GLabel 3050 2550 2    60   Output ~ 0
+MotionSensor_V+
+Wire Notes Line
+	1600 1700 3950 1700
+Wire Notes Line
+	3950 1700 3950 2650
+Wire Notes Line
+	3950 2650 1600 2650
+Wire Notes Line
+	1600 2650 1600 1700
+Text Notes 1650 1650 0    60   ~ 0
+Motion Sensor Power
+$Comp
+L GND #PWR?
+U 1 1 56623A72
+P 4150 3650
+F 0 "#PWR?" H 4150 3400 50  0001 C CNN
+F 1 "GND" H 4150 3500 50  0000 C CNN
+F 2 "" H 4150 3650 60  0000 C CNN
+F 3 "" H 4150 3650 60  0000 C CNN
+	1    4150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L PIR U?
+U 1 1 56623A78
+P 4450 3350
+F 0 "U?" H 4450 2900 60  0000 C CNN
+F 1 "PIR" H 4450 3350 60  0000 C CNN
+F 2 "" H 4450 3350 60  0000 C CNN
+F 3 "" H 4450 3350 60  0000 C CNN
+	1    4450 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 4150 3550 0    60   Output ~ 0
+ADC_Motion
+Text GLabel 4150 3450 0    60   Input ~ 0
+MotionSensor_V+
+Wire Notes Line
+	1600 3250 3000 3250
+Wire Notes Line
+	3000 3250 3000 3900
+Wire Notes Line
+	3000 3900 1600 3900
+Wire Notes Line
+	1600 3900 1600 3250
+Wire Notes Line
+	3250 3250 4600 3250
+Wire Notes Line
+	4600 3250 4600 3900
+Wire Notes Line
+	4600 3900 3250 3900
+Wire Notes Line
+	3250 3900 3250 3250
+Text Notes 1650 3200 0    60   ~ 0
+Custom Sensor
+Text Notes 3300 3200 0    60   ~ 0
+Bought Sensor
+$EndSCHEMATC

@@ -1,0 +1,370 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:CustomICs
+LIBS:CustomModules
+LIBS:CustomPower
+LIBS:CustomPowerConvertors
+LIBS:CustomTransistors
+LIBS:Custom_ShiftRegisters
+LIBS:STM32_MCU
+LIBS:dc-dc-converters
+LIBS:Relais
+LIBS:CustomDevices
+LIBS:SensorActuator-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +5V #PWR019
+U 1 1 56622EB6
+P 2950 1650
+F 0 "#PWR019" H 2950 1500 50  0001 C CNN
+F 1 "+5V" H 2950 1790 50  0000 C CNN
+F 2 "" H 2950 1650 60  0000 C CNN
+F 3 "" H 2950 1650 60  0000 C CNN
+	1    2950 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 56622ECA
+P 2650 3600
+F 0 "#PWR020" H 2650 3350 50  0001 C CNN
+F 1 "GND" H 2650 3450 50  0000 C CNN
+F 2 "" H 2650 3600 60  0000 C CNN
+F 3 "" H 2650 3600 60  0000 C CNN
+	1    2650 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L PIR U1
+U 1 1 56623061
+P 3050 3100
+F 0 "U1" H 3050 2650 60  0000 C CNN
+F 1 "PIR" H 3050 3100 60  0000 C CNN
+F 2 "CustomModules:PIR" H 3050 3100 60  0001 C CNN
+F 3 "" H 3050 3100 60  0000 C CNN
+	1    3050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PMosfetGen Q2
+U 1 1 56623098
+P 2950 2100
+F 0 "Q2" H 3270 2150 60  0000 C CNN
+F 1 "PMosfetGen" H 3270 2050 60  0000 C CNN
+F 2 "SMD_Packages:SOT-323" H 2900 2240 60  0001 C CNN
+F 3 "" H 2900 2240 60  0000 C CNN
+	1    2950 2100
+	1    0    0    1   
+$EndComp
+$Comp
+L R R5
+U 1 1 566230C3
+P 2650 1850
+F 0 "R5" V 2730 1850 50  0000 C CNN
+F 1 "R" V 2650 1850 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2580 1850 30  0001 C CNN
+F 3 "" H 2650 1850 30  0000 C CNN
+	1    2650 1850
+	1    0    0    -1  
+$EndComp
+Text GLabel 2450 3300 0    60   Output ~ 0
+ADC_Motion
+Text GLabel 2550 2000 0    60   Input ~ 0
+MotionSens_Enable
+Text GLabel 2750 3200 0    60   Input ~ 0
+MotionSensor_V+
+Text GLabel 3350 2600 2    60   Output ~ 0
+MotionSensor_V+
+Text Notes 1700 1400 0    60   ~ 0
+Motion Sensor Power
+Text Notes 1900 2950 0    60   ~ 0
+Custom Sensor
+$Comp
+L R R8
+U 1 1 5662E6BE
+P 6550 2800
+F 0 "R8" V 6630 2800 50  0000 C CNN
+F 1 "R" V 6550 2800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 6480 2800 30  0001 C CNN
+F 3 "" H 6550 2800 30  0000 C CNN
+	1    6550 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Photores R9
+U 1 1 5662E6F8
+P 6550 3500
+F 0 "R9" V 6630 3500 50  0000 C CNN
+F 1 "Photores" V 6760 3500 50  0000 C TNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_1206_RM10_HandSoldering" V 6480 3500 30  0001 C CNN
+F 3 "" H 6550 3500 30  0000 C CNN
+	1    6550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR021
+U 1 1 5662ED71
+P 6550 1600
+F 0 "#PWR021" H 6550 1450 50  0001 C CNN
+F 1 "VCC" H 6550 1750 50  0000 C CNN
+F 2 "" H 6550 1600 60  0000 C CNN
+F 3 "" H 6550 1600 60  0000 C CNN
+	1    6550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L PMosfetGen Q4
+U 1 1 5662ED95
+P 6550 2050
+F 0 "Q4" H 6870 2100 60  0000 C CNN
+F 1 "PMosfetGen" H 6870 2000 60  0000 C CNN
+F 2 "SMD_Packages:SOT-323" H 6500 2190 60  0001 C CNN
+F 3 "" H 6500 2190 60  0000 C CNN
+	1    6550 2050
+	1    0    0    1   
+$EndComp
+$Comp
+L R R7
+U 1 1 5662EE48
+P 6250 1800
+F 0 "R7" V 6330 1800 50  0000 C CNN
+F 1 "R" V 6250 1800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 6180 1800 30  0001 C CNN
+F 3 "" H 6250 1800 30  0000 C CNN
+	1    6250 1800
+	1    0    0    -1  
+$EndComp
+Text GLabel 6050 1950 0    60   Input ~ 0
+LightSensEnable
+Text GLabel 6700 3100 2    60   Output ~ 0
+ADC_Light
+Text Notes 5300 1400 0    60   ~ 0
+Light Sensor
+$Comp
+L CONN_01X04 P4
+U 1 1 5663019E
+P 3100 6050
+F 0 "P4" H 3100 6300 50  0000 C CNN
+F 1 "CONN_01X04" V 3200 6050 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Angled_1x04" H 3100 6050 60  0001 C CNN
+F 3 "" H 3100 6050 60  0000 C CNN
+	1    3100 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PMosfetGen Q1
+U 1 1 566301A5
+P 2900 5350
+F 0 "Q1" H 3220 5400 60  0000 C CNN
+F 1 "PMosfetGen" H 3220 5300 60  0000 C CNN
+F 2 "SMD_Packages:SOT-323" H 2850 5490 60  0001 C CNN
+F 3 "" H 2850 5490 60  0000 C CNN
+	1    2900 5350
+	1    0    0    1   
+$EndComp
+$Comp
+L +5V #PWR022
+U 1 1 566301AC
+P 2900 4900
+F 0 "#PWR022" H 2900 4750 50  0001 C CNN
+F 1 "+5V" H 2900 5040 50  0000 C CNN
+F 2 "" H 2900 4900 60  0000 C CNN
+F 3 "" H 2900 4900 60  0000 C CNN
+	1    2900 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 566301B2
+P 2600 5100
+F 0 "R4" V 2680 5100 50  0000 C CNN
+F 1 "R" V 2600 5100 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2530 5100 30  0001 C CNN
+F 3 "" H 2600 5100 30  0000 C CNN
+	1    2600 5100
+	1    0    0    -1  
+$EndComp
+Text GLabel 2400 5250 0    60   Input ~ 0
+DHT22_Enable
+$Comp
+L GND #PWR023
+U 1 1 566301BD
+P 2900 6200
+F 0 "#PWR023" H 2900 5950 50  0001 C CNN
+F 1 "GND" H 2900 6050 50  0000 C CNN
+F 2 "" H 2900 6200 60  0000 C CNN
+F 3 "" H 2900 6200 60  0000 C CNN
+	1    2900 6200
+	1    0    0    -1  
+$EndComp
+Text GLabel 2900 6000 0    60   Output ~ 0
+Temp_1Wire
+Text Notes 2350 4600 2    60   ~ 0
+DHT22/AM2303
+Wire Wire Line
+	2950 1650 2950 1750
+Wire Notes Line
+	1850 3000 3250 3000
+Wire Notes Line
+	1850 3000 1850 3800
+Wire Notes Line
+	4700 4000 1550 4000
+Wire Notes Line
+	1550 4000 1550 1450
+Wire Notes Line
+	1550 1450 4700 1450
+Wire Notes Line
+	4700 1450 4700 4000
+Wire Wire Line
+	6550 1600 6550 1700
+Wire Wire Line
+	6550 2450 6550 2650
+Wire Wire Line
+	6550 2950 6550 3250
+Connection ~ 6550 2600
+Wire Wire Line
+	6550 3100 6700 3100
+Connection ~ 6550 3100
+Wire Notes Line
+	5200 1500 5200 4000
+Wire Notes Line
+	5200 4000 8200 4000
+Wire Notes Line
+	8200 4000 8200 1500
+Wire Notes Line
+	8200 1500 5200 1500
+Wire Wire Line
+	2900 5750 2900 5900
+Wire Wire Line
+	2900 6100 2900 6200
+Wire Wire Line
+	2900 4900 2900 5000
+Wire Notes Line
+	1650 4600 3550 4600
+Wire Notes Line
+	3550 4600 3550 6400
+Wire Notes Line
+	1650 4600 1650 6400
+Wire Wire Line
+	6250 1650 6550 1650
+Connection ~ 6550 1650
+Wire Wire Line
+	6050 1950 6250 1950
+Connection ~ 6250 1950
+Wire Wire Line
+	2600 4950 2900 4950
+Connection ~ 2900 4950
+Wire Wire Line
+	2600 5250 2400 5250
+Connection ~ 2600 5250
+Wire Notes Line
+	1650 6400 3550 6400
+Wire Wire Line
+	2650 1700 2950 1700
+Connection ~ 2950 1700
+Wire Wire Line
+	2550 2000 2650 2000
+$Comp
+L R R3
+U 1 1 5663732E
+P 2550 3450
+F 0 "R3" V 2630 3450 50  0000 C CNN
+F 1 "R" V 2550 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2480 3450 30  0001 C CNN
+F 3 "" H 2550 3450 30  0000 C CNN
+	1    2550 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3300 2450 3300
+Connection ~ 2550 3300
+Wire Wire Line
+	2550 3600 2750 3600
+Wire Wire Line
+	2750 3600 2750 3400
+Connection ~ 2650 3600
+Wire Notes Line
+	1850 3800 3250 3800
+Wire Notes Line
+	3250 3800 3250 3000
+$Comp
+L C C7
+U 1 1 56637A5D
+P 2950 2650
+F 0 "C7" H 2975 2750 50  0000 L CNN
+F 1 "10uF" H 2975 2550 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 2988 2500 30  0001 C CNN
+F 3 "" H 2950 2650 60  0000 C CNN
+	1    2950 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR024
+U 1 1 56637ADC
+P 2950 2800
+F 0 "#PWR024" H 2950 2550 50  0001 C CNN
+F 1 "GND" H 2950 2650 50  0000 C CNN
+F 2 "" H 2950 2800 60  0000 C CNN
+F 3 "" H 2950 2800 60  0000 C CNN
+	1    2950 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2500 3250 2500
+Wire Wire Line
+	3250 2500 3250 2600
+Wire Wire Line
+	3250 2600 3350 2600
+$Comp
+L GND #PWR025
+U 1 1 5662F07B
+P 6550 3750
+F 0 "#PWR025" H 6550 3500 50  0001 C CNN
+F 1 "GND" H 6550 3600 50  0000 C CNN
+F 2 "" H 6550 3750 60  0000 C CNN
+F 3 "" H 6550 3750 60  0000 C CNN
+	1    6550 3750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
