@@ -1,4 +1,4 @@
-update=Fre 11 Dez 2015 22:53:31 CET
+update=zo 13 dec 2015 16:13:03 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -71,7 +71,7 @@ LibName39=CustomDevices
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=images/schema/
+PlotDirectoryName=data/schema/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
