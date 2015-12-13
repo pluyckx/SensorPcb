@@ -353,7 +353,7 @@ Text GLabel 5350 4500 0    60   Input ~ 0
 RF_IRQ
 NoConn ~ 7050 3200
 Text Notes 7850 2650 0    60   ~ 0
-Peripherals:\nRF module (SPI, CSN, CE, IRQ)\nDHT (1wire, enable)\nLight sensor (adc, enable)\nMotion (ADC, enable)\nUART\nSWD\nRelay
+Peripherals:\nRF module (SPI, CSN, CE, IRQ)\nDHT (1wire, enable)\nLight sensor (adc, enable)\nMotion (ADC, enable)\nUART\nSWD
 Text GLabel 5350 3900 0    60   Output ~ 0
 MCU_LED
 NoConn ~ 7050 3600
