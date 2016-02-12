@@ -2,8 +2,8 @@
 <export version="D">
   <design>
     <source>/media/Data/pluyckx/Dropbox/Elektronics/kicad/ThermostatModules/SensorActuator.sch</source>
-    <date>do 11 feb 2016 20:17:03 CET</date>
-    <tool>Eeschema 4.0.1-3.201602080046+6200~38~ubuntu15.10.1-stable</tool>
+    <date>vr 12 feb 2016 20:22:55 CET</date>
+    <tool>Eeschema 4.0.1-4.201602110846+6195~38~ubuntu15.10.1-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -135,7 +135,7 @@
     </comp>
     <comp ref="R1">
       <value>100k</value>
-      <footprint>Resistors_SMD:R_1206</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/CPU/" tstamps="/565E0F3A/"/>
       <tstamp>565E1595</tstamp>
@@ -170,7 +170,7 @@
     </comp>
     <comp ref="R2">
       <value>475</value>
-      <footprint>Resistors_SMD:R_1206</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Digital IO/" tstamps="/56621344/"/>
       <tstamp>566214E0</tstamp>
@@ -191,14 +191,14 @@
     </comp>
     <comp ref="R5">
       <value>47.5k</value>
-      <footprint>Resistors_SMD:R_1206</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Sensors/" tstamps="/56622DA5/"/>
       <tstamp>566230C3</tstamp>
     </comp>
     <comp ref="R8">
       <value>3600</value>
-      <footprint>Resistors_SMD:R_1206</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Sensors/" tstamps="/56622DA5/"/>
       <tstamp>5662E6BE</tstamp>
@@ -212,7 +212,7 @@
     </comp>
     <comp ref="R7">
       <value>47.5k</value>
-      <footprint>Resistors_SMD:R_1206</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Sensors/" tstamps="/56622DA5/"/>
       <tstamp>5662EE48</tstamp>
@@ -233,14 +233,14 @@
     </comp>
     <comp ref="R4">
       <value>47.5k</value>
-      <footprint>Resistors_SMD:R_1206</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Sensors/" tstamps="/56622DA5/"/>
       <tstamp>566301B2</tstamp>
     </comp>
     <comp ref="R3">
       <value>100k</value>
-      <footprint>Resistors_SMD:R_1206</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Sensors/" tstamps="/56622DA5/"/>
       <tstamp>5663732E</tstamp>
@@ -254,7 +254,7 @@
     </comp>
     <comp ref="R6">
       <value>10k</value>
-      <footprint>Resistors_SMD:R_1206</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Sensors/" tstamps="/56622DA5/"/>
       <tstamp>56A500E8</tstamp>
@@ -268,14 +268,14 @@
     </comp>
     <comp ref="R13">
       <value>100k</value>
-      <footprint>Resistors_SMD:R_1206</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Sensors/" tstamps="/56622DA5/"/>
       <tstamp>56A503DD</tstamp>
     </comp>
     <comp ref="R14">
       <value>100k</value>
-      <footprint>Resistors_SMD:R_1206</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Sensors/" tstamps="/56622DA5/"/>
       <tstamp>56A5048C</tstamp>
@@ -289,7 +289,7 @@
     </comp>
     <comp ref="R9">
       <value>1M</value>
-      <footprint>Resistors_SMD:R_1206</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Sensors/" tstamps="/56622DA5/"/>
       <tstamp>56A50A2A</tstamp>
@@ -303,7 +303,7 @@
     </comp>
     <comp ref="R12">
       <value>10k</value>
-      <footprint>Resistors_SMD:R_1206</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Sensors/" tstamps="/56622DA5/"/>
       <tstamp>56A5105F</tstamp>
@@ -317,7 +317,7 @@
     </comp>
     <comp ref="R15">
       <value>1M</value>
-      <footprint>Resistors_SMD:R_1206</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Sensors/" tstamps="/56622DA5/"/>
       <tstamp>56A51075</tstamp>
@@ -331,14 +331,14 @@
     </comp>
     <comp ref="R10">
       <value>10k</value>
-      <footprint>Resistors_SMD:R_1206</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Sensors/" tstamps="/56622DA5/"/>
       <tstamp>56A51357</tstamp>
     </comp>
     <comp ref="R16">
       <value>10k</value>
-      <footprint>Resistors_SMD:R_1206</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Sensors/" tstamps="/56622DA5/"/>
       <tstamp>56A515A3</tstamp>
@@ -373,7 +373,7 @@
     </comp>
     <comp ref="R11">
       <value>47k</value>
-      <footprint>Resistors_SMD:R_1206</footprint>
+      <footprint>Resistors_SMD:R_0603</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Supply/" tstamps="/56630E7C/"/>
       <tstamp>5664A27B</tstamp>
@@ -687,8 +687,14 @@
     </libpart>
   </libparts>
   <libraries>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
     <library logical="conn">
       <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="linear">
+      <uri>/usr/share/kicad/library/linear.lib</uri>
     </library>
     <library logical="CustomModules">
       <uri>/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/CustomModules.lib</uri>
@@ -696,20 +702,14 @@
     <library logical="CustomPowerConvertors">
       <uri>/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/CustomPowerConvertors.lib</uri>
     </library>
-    <library logical="STM32_MCU">
-      <uri>/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/STM32_MCU.lib</uri>
-    </library>
     <library logical="CustomTransistors">
       <uri>/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/CustomTransistors.lib</uri>
     </library>
+    <library logical="STM32_MCU">
+      <uri>/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/STM32_MCU.lib</uri>
+    </library>
     <library logical="CustomDevices">
       <uri>/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/CustomDevices.lib</uri>
-    </library>
-    <library logical="linear">
-      <uri>/usr/share/kicad/library/linear.lib</uri>
-    </library>
-    <library logical="device">
-      <uri>/usr/share/kicad/library/device.lib</uri>
     </library>
   </libraries>
   <nets>
