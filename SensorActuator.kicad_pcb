@@ -64,7 +64,7 @@
     (aux_axis_origin 0 0)
     (visible_elements FFFEF77F)
     (pcbplotparams
-      (layerselection 0x00240_80000000)
+      (layerselection 0x00000_80000000)
       (usegerberextensions false)
       (excludeedgelayer false)
       (linewidth 0.100000)
@@ -83,11 +83,11 @@
       (plotinvisibletext false)
       (padsonsilk false)
       (subtractmaskfromsilk false)
-      (outputformat 5)
-      (mirror false)
+      (outputformat 4)
+      (mirror true)
       (drillshape 1)
       (scaleselection 1)
-      (outputdirectory data/pcb/svg_kicad/))
+      (outputdirectory data/pcb/pdf_kicad/))
   )
 
   (net 0 "")
