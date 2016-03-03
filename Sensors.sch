@@ -214,7 +214,7 @@ F 3 "" H 1900 5650 60  0000 C CNN
 	1    1900 5650
 	1    0    0    -1  
 $EndComp
-Text GLabel 1900 5450 0    60   Output ~ 0
+Text GLabel 1600 5450 0    60   Output ~ 0
 Temp_1Wire
 Text Notes 1350 4050 2    60   ~ 0
 DHT22/AM2303
@@ -765,4 +765,24 @@ F 3 "" H 2400 1750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2400 1750
+Wire Wire Line
+	1900 5450 1600 5450
+$Comp
+L R R17
+U 1 1 56D88984
+P 1700 5300
+F 0 "R17" V 1780 5300 50  0000 C CNN
+F 1 "1k" V 1700 5300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1630 5300 50  0001 C CNN
+F 3 "" H 1700 5300 50  0000 C CNN
+	1    1700 5300
+	1    0    0    -1  
+$EndComp
+Connection ~ 1700 5450
+Wire Wire Line
+	1700 5150 1850 5150
+Wire Wire Line
+	1850 5150 1850 5200
+Wire Wire Line
+	1850 5200 1900 5200
 $EndSCHEMATC

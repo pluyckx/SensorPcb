@@ -323,7 +323,7 @@ Text GLabel 5350 3600 0    60   Input ~ 0
 ADC_Light
 Text GLabel 5350 3700 0    60   Input ~ 0
 ADC_Motion
-Text GLabel 7050 3300 2    60   Input ~ 0
+Text GLabel 7050 3600 2    60   Input ~ 0
 Temp_1Wire
 Text GLabel 7050 3400 2    60   Output ~ 0
 DHT22_Enable
@@ -356,7 +356,7 @@ Text Notes 7850 2650 0    60   ~ 0
 Peripherals:\nRF module (SPI, CSN, CE, IRQ)\nDHT (1wire, enable)\nLight sensor (adc, enable)\nMotion (ADC, enable)\nUART\nSWD
 Text GLabel 5350 3900 0    60   Output ~ 0
 MCU_LED
-NoConn ~ 7050 3600
+NoConn ~ 7050 3300
 NoConn ~ 7050 3500
 NoConn ~ 7050 3800
 NoConn ~ 7050 4200
