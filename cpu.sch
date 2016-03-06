@@ -299,16 +299,16 @@ MCU_RST
 $Comp
 L VCC #PWR011
 U 1 1 565E178E
-P 4800 3500
-F 0 "#PWR011" H 4800 3350 50  0001 C CNN
-F 1 "VCC" H 4800 3650 50  0000 C CNN
-F 2 "" H 4800 3500 60  0000 C CNN
-F 3 "" H 4800 3500 60  0000 C CNN
-	1    4800 3500
+P 4300 3500
+F 0 "#PWR011" H 4300 3350 50  0001 C CNN
+F 1 "VCC" H 4300 3650 50  0000 C CNN
+F 2 "" H 4300 3500 60  0000 C CNN
+F 3 "" H 4300 3500 60  0000 C CNN
+	1    4300 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 3500 5350 3500
+	4300 3500 5350 3500
 Wire Notes Line
 	2550 4700 3200 4700
 Wire Notes Line
@@ -323,9 +323,9 @@ Text GLabel 5350 3600 0    60   Input ~ 0
 ADC_Light
 Text GLabel 5350 3700 0    60   Input ~ 0
 ADC_Motion
-Text GLabel 7050 3600 2    60   Input ~ 0
+Text GLabel 5350 3800 0    60   Input ~ 0
 Temp_1Wire
-Text GLabel 7050 3400 2    60   Output ~ 0
+Text GLabel 5350 3300 0    60   Output ~ 0
 DHT22_Enable
 Text GLabel 5350 4100 0    60   Output ~ 0
 SPI_RF_SCK
@@ -333,34 +333,34 @@ Text GLabel 5350 4200 0    60   Input ~ 0
 SPI_RF_MISO
 Text GLabel 5350 4300 0    60   Output ~ 0
 SPI_RF_MOSI
-Text GLabel 5350 3300 0    60   Output ~ 0
+Text GLabel 7050 4100 2    60   Output ~ 0
 MotionSens_Enable
-Text GLabel 7050 4400 2    60   Output ~ 0
+Text GLabel 7050 3400 2    60   Output ~ 0
 UART_TX
-Text GLabel 7050 4300 2    60   Output ~ 0
+Text GLabel 7050 3300 2    60   Output ~ 0
 UART_RX
-Text GLabel 5350 3800 0    60   Output ~ 0
-LightSensEnable
+Text GLabel 5350 3200 0    60   Output ~ 0
+OpampEnable
 Text GLabel 7050 4000 2    60   BiDi ~ 0
 SWDIO
 Text GLabel 7050 3900 2    60   Input ~ 0
 SWDCLK
 Text GLabel 5350 4000 0    60   Output ~ 0
 RF_CSN
-Text GLabel 5350 4500 0    60   Output ~ 0
+Text GLabel 5350 3900 0    60   Output ~ 0
 RF_CE
 Text GLabel 5350 4400 0    60   Input ~ 0
 RF_IRQ
 NoConn ~ 7050 3200
 Text Notes 7850 2650 0    60   ~ 0
 Peripherals:\nRF module (SPI, CSN, CE, IRQ)\nDHT (1wire, enable)\nLight sensor (adc, enable)\nMotion (ADC, enable)\nUART\nSWD
-Text GLabel 5350 3900 0    60   Output ~ 0
+Text GLabel 5350 4500 0    60   Output ~ 0
 MCU_LED
-NoConn ~ 7050 3300
-NoConn ~ 7050 3500
 NoConn ~ 7050 3800
+NoConn ~ 7050 3500
+NoConn ~ 7050 3600
 NoConn ~ 7050 4200
-NoConn ~ 7050 4100
+NoConn ~ 7050 4300
 NoConn ~ 7050 3700
 $Comp
 L STM32L051K8T6 IC1
@@ -373,7 +373,7 @@ F 3 "" H 5550 3000 60  0000 C CNN
 	1    6200 3000
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7050 4500
-Text GLabel 5350 3200 0    60   Input ~ 0
+NoConn ~ 7050 4400
+Text GLabel 7050 4500 2    60   Output ~ 0
 Enable5V
 $EndSCHEMATC
