@@ -3,7 +3,7 @@
   (general
     (links 115)
     (no_connects 0)
-    (area 109.774999 52.4 191.5 119.575)
+    (area 109.774999 55.61 191.5 119.575)
     (thickness 1.6)
     (drawings 10)
     (tracks 444)
@@ -64,7 +64,7 @@
     (aux_axis_origin 0 0)
     (visible_elements FFFEE77F)
     (pcbplotparams
-      (layerselection 0x00000_00000001)
+      (layerselection 0x00210_80000000)
       (usegerberextensions false)
       (excludeedgelayer false)
       (linewidth 0.100000)
@@ -84,7 +84,7 @@
       (padsonsilk false)
       (subtractmaskfromsilk false)
       (outputformat 5)
-      (mirror true)
+      (mirror false)
       (drillshape 1)
       (scaleselection 1)
       (outputdirectory data/pcb/svg/))
