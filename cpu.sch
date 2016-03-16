@@ -38,7 +38,7 @@ LIBS:STM32_MCU
 LIBS:dc-dc-converters
 LIBS:Relais
 LIBS:CustomDevices
-LIBS:SensorActuator-cache
+LIBS:Sensor-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -337,7 +337,7 @@ Text GLabel 7050 4100 2    60   Output ~ 0
 MotionSens_Enable
 Text GLabel 7050 3400 2    60   Output ~ 0
 UART_TX
-Text GLabel 7050 3300 2    60   Output ~ 0
+Text GLabel 7050 3300 2    60   Input ~ 0
 UART_RX
 Text GLabel 5350 3200 0    60   Output ~ 0
 OpampEnable

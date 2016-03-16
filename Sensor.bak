@@ -38,7 +38,7 @@ LIBS:STM32_MCU
 LIBS:dc-dc-converters
 LIBS:Relais
 LIBS:CustomDevices
-LIBS:Sensor-cache
+LIBS:SensorActuator-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
