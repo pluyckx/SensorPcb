@@ -31,13 +31,13 @@ LIBS:valves
 LIBS:CustomICs
 LIBS:CustomModules
 LIBS:CustomPower
-LIBS:CustomPowerConvertors
 LIBS:CustomTransistors
 LIBS:Custom_ShiftRegisters
 LIBS:STM32_MCU
 LIBS:dc-dc-converters
 LIBS:Relais
 LIBS:CustomDevices
+LIBS:CustomPowerConvertors
 LIBS:Sensor-cache
 EELAYER 25 0
 EELAYER END
@@ -66,10 +66,10 @@ F 4 "0.02" H 4300 3500 60  0001 C CNN "Price"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R2
+L R R4
 U 1 1 566214E0
 P 4300 3000
-F 0 "R2" V 4380 3000 50  0000 C CNN
+F 0 "R4" V 4380 3000 50  0000 C CNN
 F 1 "475" V 4300 3000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 4230 3000 30  0001 C CNN
 F 3 "" H 4300 3000 30  0000 C CNN
@@ -78,10 +78,10 @@ F 4 "0.01" V 4300 3000 60  0001 C CNN "Price"
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR016
+L VCC #PWR18
 U 1 1 566214F9
 P 4300 2600
-F 0 "#PWR016" H 4300 2450 50  0001 C CNN
+F 0 "#PWR18" H 4300 2450 50  0001 C CNN
 F 1 "VCC" H 4300 2750 50  0000 C CNN
 F 2 "" H 4300 2600 60  0000 C CNN
 F 3 "" H 4300 2600 60  0000 C CNN

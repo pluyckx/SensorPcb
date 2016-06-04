@@ -31,13 +31,13 @@ LIBS:valves
 LIBS:CustomICs
 LIBS:CustomModules
 LIBS:CustomPower
-LIBS:CustomPowerConvertors
 LIBS:CustomTransistors
 LIBS:Custom_ShiftRegisters
 LIBS:STM32_MCU
 LIBS:dc-dc-converters
 LIBS:Relais
 LIBS:CustomDevices
+LIBS:CustomPowerConvertors
 LIBS:Sensor-cache
 EELAYER 25 0
 EELAYER END

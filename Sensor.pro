@@ -1,4 +1,4 @@
-update=zo 13 dec 2015 16:13:03 CET
+update=Sam 04 Jun 2016 15:49:53 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=data/schema/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=../libs;../libs/DC_DC_Converters
@@ -61,20 +71,10 @@ LibName29=valves
 LibName30=/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/CustomICs
 LibName31=/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/CustomModules
 LibName32=/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/CustomPower
-LibName33=/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/CustomPowerConvertors
-LibName34=/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/CustomTransistors
-LibName35=/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/Custom_ShiftRegisters
-LibName36=/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/STM32_MCU
-LibName37=/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/DC_DC_Converters/dc-dc-converters
-LibName38=Relais
-LibName39=CustomDevices
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=data/schema/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName33=/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/CustomTransistors
+LibName34=/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/Custom_ShiftRegisters
+LibName35=/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/STM32_MCU
+LibName36=/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/DC_DC_Converters/dc-dc-converters
+LibName37=Relais
+LibName38=CustomDevices
+LibName39=CustomPowerConvertors
