@@ -44,10 +44,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 6
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Sensor"
+Date "2016-06-05"
+Rev "3"
+Comp "Philip Luyckx"
 Comment1 ""
 Comment2 ""
 Comment3 ""

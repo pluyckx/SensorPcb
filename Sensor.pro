@@ -1,4 +1,4 @@
-update=Sam 04 Jun 2016 15:49:53 CEST
+update=Son 05 Jun 2016 21:32:46 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,16 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=data/schema/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=../libs;../libs/DC_DC_Converters
@@ -78,3 +68,13 @@ LibName36=/media/Data/pluyckx/Dropbox/Elektronics/kicad/libs/DC_DC_Converters/dc
 LibName37=Relais
 LibName38=CustomDevices
 LibName39=CustomPowerConvertors
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=data/schema/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

@@ -44,10 +44,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 6
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Sensor"
+Date "2016-06-05"
+Rev "3"
+Comp "Philip Luyckx"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -393,7 +393,7 @@ U 1 1 57536ED2
 P 7400 3150
 F 0 "R2" V 7480 3150 50  0000 C CNN
 F 1 "10k" V 7400 3150 50  0000 C CNN
-F 2 "" V 7330 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7330 3150 50  0001 C CNN
 F 3 "" H 7400 3150 50  0000 C CNN
 	1    7400 3150
 	1    0    0    -1  
@@ -416,7 +416,7 @@ U 1 1 57536F2D
 P 7400 3550
 F 0 "R3" V 7480 3550 50  0000 C CNN
 F 1 "10k" V 7400 3550 50  0000 C CNN
-F 2 "" V 7330 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7330 3550 50  0001 C CNN
 F 3 "" H 7400 3550 50  0000 C CNN
 	1    7400 3550
 	1    0    0    -1  
