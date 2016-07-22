@@ -104,4 +104,38 @@ Wire Notes Line
 	4100 4200 4100 2300
 Text Notes 4100 2300 0    60   ~ 0
 LED
+$Comp
+L SW_PUSH SW2
+U 1 1 5791EAD8
+P 5500 3250
+F 0 "SW2" H 5650 3360 50  0000 C CNN
+F 1 "SW_PUSH" H 5500 3170 50  0000 C CNN
+F 2 "CustomSmd:MicroSwitch_6x6mm" H 5500 3250 50  0001 C CNN
+F 3 "" H 5500 3250 50  0000 C CNN
+	1    5500 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR019
+U 1 1 5791EB60
+P 5500 3550
+F 0 "#PWR019" H 5500 3300 50  0001 C CNN
+F 1 "GND" H 5500 3400 50  0000 C CNN
+F 2 "" H 5500 3550 50  0000 C CNN
+F 3 "" H 5500 3550 50  0000 C CNN
+	1    5500 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 5500 2950 1    60   Output ~ 0
+BTN_User
+Wire Notes Line
+	5300 4200 5300 2300
+Text Notes 5300 2300 0    60   ~ 0
+User Button
+Wire Notes Line
+	5300 2300 5700 2300
+Wire Notes Line
+	5700 2300 5700 4200
+Wire Notes Line
+	5700 4200 5300 4200
 $EndSCHEMATC
