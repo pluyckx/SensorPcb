@@ -269,9 +269,9 @@ F 3 "" H 4300 3500 60  0000 C CNN
 $EndComp
 Text Notes 2550 4700 0    60   ~ 0
 Reset circuit
-Text GLabel 5350 3600 0    60   Input ~ 0
-ADC_Light
 Text GLabel 5350 3700 0    60   Input ~ 0
+ADC_Light
+Text GLabel 5350 3800 0    60   Input ~ 0
 ADC_Motion
 Text GLabel 5350 4100 0    60   Output ~ 0
 SPI_RF_SCK
@@ -378,7 +378,6 @@ Connection ~ 7050 3100
 Wire Wire Line
 	7050 3100 7050 3200
 NoConn ~ 5350 3300
-NoConn ~ 5350 3800
 Text GLabel 7800 3300 2    60   BiDi ~ 0
 HTU21_SDA
 Text GLabel 7800 3400 2    60   Input ~ 0
@@ -435,4 +434,6 @@ $EndComp
 Connection ~ 7400 3400
 NoConn ~ 5350 3200
 NoConn ~ 7050 4100
+Text GLabel 5350 3600 0    60   Input ~ 0
+DIG_Motion
 $EndSCHEMATC

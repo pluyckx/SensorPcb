@@ -391,8 +391,6 @@ Wire Wire Line
 	8000 4800 8300 4800
 Wire Wire Line
 	8300 4800 8300 4050
-Wire Wire Line
-	8200 4050 8650 4050
 Connection ~ 8000 4800
 Wire Wire Line
 	7700 4800 7550 4800
@@ -402,7 +400,7 @@ Connection ~ 7550 4150
 Connection ~ 7700 4800
 Connection ~ 6700 4150
 Connection ~ 8300 4050
-Text GLabel 8650 4050 2    60   Output ~ 0
+Text GLabel 8550 4050 2    60   Output ~ 0
 ADC_Motion
 Text Notes 5050 6100 0    60   ~ 0
 Amplify the motion output using band amplifiers\nfc = 1/(2*Pi*R*C)\nA = R_lowpass / R_highpass\nThe highpass filter is at the input, the lowpass is in the feedback loop\n\nHere:\nf_lowpass = 1.6Hz\nf_highpass = 1.6Hz\nA = 100
@@ -540,10 +538,6 @@ Wire Notes Line
 	850  4350 850  3650
 Text Notes 850  3650 0    60   ~ 0
 Temperature & Humidity sensor
-Wire Wire Line
-	3450 5750 3450 5950
-Wire Wire Line
-	3450 5950 4050 5950
 $Comp
 L MCP60x4 U1
 U 3 1 57538AEE
@@ -580,12 +574,12 @@ $EndComp
 $Comp
 L MCP60x4 U1
 U 4 1 57538FA3
-P 3700 5450
-F 0 "U1" H 3800 5050 60  0000 C CNN
-F 1 "MCP60x4" H 3900 5450 60  0000 C CNN
-F 2 "CustomSmd:SOIC-14" H 3700 5450 60  0001 C CNN
-F 3 "" H 3700 5450 60  0000 C CNN
-	4    3700 5450
+P 10300 3950
+F 0 "U1" H 10400 3550 60  0000 C CNN
+F 1 "MCP60x4" H 10500 3950 60  0000 C CNN
+F 2 "CustomSmd:SOIC-14" H 10300 3950 60  0001 C CNN
+F 3 "" H 10300 3950 60  0000 C CNN
+	4    10300 3950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -657,10 +651,6 @@ Wire Wire Line
 Connection ~ 1300 5600
 Wire Wire Line
 	1300 5400 1850 5400
-Wire Wire Line
-	4050 5950 4050 5650
-Text GLabel 3450 5550 0    60   Input ~ 0
-Motion_Offset
 Wire Notes Line
 	1000 5150 2400 5150
 Wire Notes Line
@@ -669,18 +659,8 @@ Wire Notes Line
 	2400 6350 1000 6350
 Wire Notes Line
 	1000 6350 1000 5150
-Wire Notes Line
-	2650 5150 4200 5150
-Wire Notes Line
-	4200 5150 4200 6350
-Wire Notes Line
-	4200 6350 2650 6350
-Wire Notes Line
-	2650 6350 2650 5150
 Text Notes 1000 5150 0    60   ~ 0
 Opamp supply
-Text Notes 2650 5150 0    60   ~ 0
-Unused opamp
 Wire Wire Line
 	7250 2650 7250 2750
 $Comp
@@ -694,4 +674,78 @@ F 3 "" H 1500 3900 50  0000 C CNN
 	1    1500 3900
 	1    0    0    -1  
 $EndComp
+Text GLabel 10050 4250 0    60   Input ~ 0
+ADC_Motion
+$Comp
+L R R15
+U 1 1 57802832
+P 9400 3800
+F 0 "R15" V 9480 3800 50  0000 C CNN
+F 1 "1M" V 9400 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 9330 3800 50  0001 C CNN
+F 3 "" H 9400 3800 50  0000 C CNN
+	1    9400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R16
+U 1 1 578028BF
+P 9400 4300
+F 0 "R16" V 9480 4300 50  0000 C CNN
+F 1 "1M" V 9400 4300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 9330 4300 50  0001 C CNN
+F 3 "" H 9400 4300 50  0000 C CNN
+	1    9400 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +1V8 #PWR031
+U 1 1 5780291A
+P 9400 3650
+F 0 "#PWR031" H 9400 3500 50  0001 C CNN
+F 1 "+1V8" H 9400 3790 50  0000 C CNN
+F 2 "" H 9400 3650 50  0000 C CNN
+F 3 "" H 9400 3650 50  0000 C CNN
+	1    9400 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 3950 9400 4150
+$Comp
+L GND #PWR032
+U 1 1 578029DA
+P 9400 4450
+F 0 "#PWR032" H 9400 4200 50  0001 C CNN
+F 1 "GND" H 9400 4300 50  0000 C CNN
+F 2 "" H 9400 4450 50  0000 C CNN
+F 3 "" H 9400 4450 50  0000 C CNN
+	1    9400 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 4050 10050 4050
+Connection ~ 9400 4050
+Wire Wire Line
+	10050 4050 10050 3750
+Wire Wire Line
+	10050 3750 10150 3750
+$Comp
+L R R17
+U 1 1 57802B72
+P 10300 3750
+F 0 "R17" V 10380 3750 50  0000 C CNN
+F 1 "1.6M" V 10300 3750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 10230 3750 50  0001 C CNN
+F 3 "" H 10300 3750 50  0000 C CNN
+	1    10300 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10450 3750 10650 3750
+Wire Wire Line
+	10650 3750 10650 4150
+Text GLabel 10650 4150 2    60   Output ~ 0
+DIG_Motion
+Wire Wire Line
+	8200 4050 8550 4050
 $EndSCHEMATC
