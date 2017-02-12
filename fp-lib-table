@@ -6,4 +6,5 @@
   (lib (name DC_DC_Converters)(type KiCad)(uri /media/Data/pluyckx/Dropbox/Elektronics/kicad/modules/DC_DC_Converters.pretty)(options "")(descr ""))
   (lib (name Inductors_DRA)(type KiCad)(uri /media/Data/pluyckx/Dropbox/Elektronics/kicad/modules/Inductors_DRA.pretty)(options "")(descr ""))
   (lib (name CustomModules)(type KiCad)(uri /media/Data/pluyckx/Dropbox/Elektronics/kicad/modules/CustomModules.pretty)(options "")(descr ""))
+  (lib (name PinHeaders)(type KiCad)(uri /media/Data/pluyckx/Dropbox/Elektronics/kicad/modules/PinHeaders.pretty)(options "")(descr ""))
 )
