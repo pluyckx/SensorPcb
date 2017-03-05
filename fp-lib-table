@@ -7,4 +7,5 @@
   (lib (name Inductors_DRA)(type KiCad)(uri /media/Data/pluyckx/Dropbox/Elektronics/kicad/modules/Inductors_DRA.pretty)(options "")(descr ""))
   (lib (name CustomModules)(type KiCad)(uri /media/Data/pluyckx/Dropbox/Elektronics/kicad/modules/CustomModules.pretty)(options "")(descr ""))
   (lib (name PinHeaders)(type KiCad)(uri /media/Data/pluyckx/Dropbox/Elektronics/kicad/modules/PinHeaders.pretty)(options "")(descr ""))
+  (lib (name ConnWago)(type KiCad)(uri /media/Data/pluyckx/Dropbox/Elektronics/kicad/modules/ConnWago.pretty)(options "")(descr ""))
 )
