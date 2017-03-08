@@ -1,8 +1,8 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.4+dfsg1-stable)
 
   (general
-    (links 161)
-    (no_connects 0)
+    (links 794)
+    (no_connects 150)
     (area 88.703143 33.8 202.821429 141.050001)
     (thickness 1.6)
     (drawings 49)
@@ -69,11 +69,11 @@
     (visible_elements FFFEDF7F)
     (pcbplotparams
       (layerselection 0x012f0_80000001)
-      (usegerberextensions false)
-      (excludeedgelayer false)
+      (usegerberextensions true)
+      (excludeedgelayer true)
       (linewidth 0.100000)
       (plotframeref false)
-      (viasonmask false)
+      (viasonmask true)
       (mode 1)
       (useauxorigin false)
       (hpglpennumber 1)
