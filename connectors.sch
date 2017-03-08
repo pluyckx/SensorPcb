@@ -140,7 +140,7 @@ F 2 "PinHeaders:Pin_Header_Straight_2x04_TH" H 3150 2850 50  0001 C CNN
 F 3 "" H 3150 2850 50  0000 C CNN
 F 4 "0.13" H 3150 4050 60  0001 C CNN "Price"
 	1    3150 4050
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 $Comp
 L C C7
