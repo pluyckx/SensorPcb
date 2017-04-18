@@ -1,0 +1,24 @@
+
+DEBUG CONNECTOR
+--------------
+
++----------+
+|          |
+|          |
+|-+ 1  2   |
+| | 3  4   |
+| | 5  6   |
+|-+ 7  8   |
+|          |
+|          |
++----------+
+
+Pinout:
+ 1) Vcc
+ 2) GND
+ 3) SWDCLK
+ 4) UART_TX
+ 5) SWDIO
+ 6) UART_RX
+ 7) MCU_RST
+ 8) NC
